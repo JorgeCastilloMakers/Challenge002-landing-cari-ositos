@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Flex', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(assets/pexels-radu-florin-2506913.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    gap: 100px;
+}
+
+nav img{
+    width: 200px;
+    padding-bottom: 10px;
+}
+nav{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    height: 80px;
+    color: #fff;
+    background-color: rgb(2 2 2 / 20%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+.nav-menu{
+    display: flex;
+    justify-content: right;
+    gap: 3em;
+    padding-right: 15px;
+    list-style: none;
+}
+  
+.nav-item{
+    color: #fff;
+    text-decoration: none;
+    --clippy: circle(0% at 50% 50%);
+    font-size: 20px;
+    font-weight: 200;
+}
+  
+.nav-item::after{
+    content: "";
+    display: block;
+    background: #FF9FB8;
+    width: 100%;
+    margin-top: 3px;
+    height: 4px;
+    clip-path: var(--clippy);
+    transition: clip-path .5s;
+}
+  
+.nav-item:hover{
+    --clippy: circle(50% at 50% 50%);
+}
+  
+.nav-label, .nav-input {
+      display: none;
+}
+
+.fantasmin{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+.title{
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+.title h1{
+    font-size: clamp(25px, 10vw, 80px);
+    color: #FF9FB8;
+    font-weight: 900;
+}
+.title h2{
+    font-size: clamp(15px, 5vw, 40px);
+    color: #EAC3AE;
+    font-weight: 200;
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-container{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-about img{
+    width: 100%;
+    overflow: hidden;
+    max-width: 580px;
+
+}
+.text-about{
+    width: 80%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.text-about h2{
+    font-size: clamp(15px, 6vw, 45px);
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #FF9FB8;
+}
+.text-about p{
+    width: 100%;
+    font-size: clamp(20px, 3vw, 30px);
+    font-weight: 200;
+    color: #ac9082;
+    letter-spacing: 1.5px;
+    text-align: justify;
+}
+
+.personaliza{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/pexels-marina-shatskikh-1212118.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.formulario{
+    padding: 30px;
+    background-color: #000000a3;
+    border-radius: 20px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+
+}
+.formulario h1{
+    font-size: clamp(25px, 8vw, 60px);
+    color: #FF9FB8;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+}
+form{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #ac9082;
+}
+
+form p{
+    font-size: clamp(15px, 1.5vw, 25px);
+    font-weight: 200;
+}
+form label{
+    font-size: clamp(15px, 1.5vw, 25px);
+    font-weight: 200;
+}
+
+.form-color, .form-size, .form-aroma, .form-accesorios{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-color select, .form-size select, .form-aroma select, .form-accesorios select{
+    width: 50%;
+    font-weight: 500;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #0000006e;
+    color: #FF9FB8;
+}
+.form-aroma select{
+    width: 50%;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #0000006e;
+    color: #FF9FB8;
+}
+.form-btn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.form-btn button{
+    border: none;
+    background: #FF9FB8;
+    padding: 15px 60px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease 0s;
+}
+
+.form-btn button:hover{
+    transform: translateY(-7px);
+    -webkit-box-shadow: 1px 7px 19px -1px rgba(61,42,64,0.73); 
+    box-shadow: 1px 7px 19px -1px rgba(61,42,64,0.73);
+}
+.contact{
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container{
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#ac90826e;
+    border-radius: 10px;
+}
+
+.contact-form{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20%;
+}
+
+.image-contact{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    gap: 20px;
+    flex-direction: column;
+    background-image: url(assets/pexels-nothing-ahead-5786759.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 10px 10px 0px;
+}
+.text-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 70%;
+    border-radius: 5px;
+}
+.image-contact h2{
+    color:#ff9fb8;
+    font-size: clamp(18px, 3vw, 25px);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.image-contact li{
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-size: clamp(12px,2vw, 18px);
+    letter-spacing: 1.5px;
+    font-weight: 200;
+    gap: 10px;
+}
+
+.contact-form h2{
+    font-size: clamp(25px, 4vw, 35px);
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #FF9FB8;
+}
+
+.name, .email, .mensaje{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name input, .email input{
+    width: 250px;
+    font-weight: 500;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #0000006e;
+    color: #FF9FB8;
+    outline: none;
+    border: 0;
+}
+
+.mensaje textarea{
+    outline: none;
+    max-width: 250px;
+    min-width: 250px;
+    max-height: 200px;
+    min-height: 100px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #0000006e;
+    color: #FF9FB8;
+    
+}
+
+.contact-btn{
+    border: none;
+    background: #FF9FB8;
+    padding: 15px 45px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease 0s;
+}
+.contact-btn:hover{
+    transform: translateY(-7px);
+    -webkit-box-shadow: 1px 7px 19px -1px rgba(61,42,64,0.73); 
+    box-shadow: 1px 7px 19px -1px rgba(61,42,64,0.73);
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #ac9082;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot img{
+    width: 150px;
+}
+
+.foot p{
+    color: #ffffff;
+    font-size: clamp(12px,2vh,15px);
+    font-weight: 200;
+}
+
+@media (max-width: 480px) {
+    .title{
+        width: 100%;
+    }
+    .about{
+        height: 800px;
+        padding-bottom: 10px;
+    }
+    .image-about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-about img{
+        width: 100%;
+    }
+    .about-container{
+        height: 740px;
+        flex-direction: column-reverse;
+        padding-bottom: 10px;
+    }
+
+    .text-about{
+        padding-bottom: 50px;
+    }
+    nav {
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    .nav-label{
+        z-index: 5;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        padding-right: 10px;
+    }
+    .nav-item {
+      font-size: 30px;
+  }
+    .nav-menu{
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        bottom: 0;
+        width: 70vw;
+        left: 0;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        transition: clip-path 0.5s ease-in-out;
+        background-color: #EAC3AE;
+        padding-top: 30px;
+        padding-left: 15px;
+    }
+    .nav-item::after{
+        content: "";
+        display: block;
+        background: #FF9FB8;
+        width: 100%;
+        margin-top: 3px;
+        height: 4px;
+        clip-path: var(--clippy);
+        transition: clip-path .5s;
+    }
+    .nav-input:checked ~ .nav-menu{
+  
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .formulario{
+        width: 100%;
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .form{
+        width: 100%;
+    }
+    .form-btn{
+        position: relative;
+        left: 25%;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-form {
+        padding-left: 10%;
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }
+    .image-contact{
+        border-radius: 0 0 10px 10px;
+    }
+    .text-container{
+        background-color: #0006;
+        width: 90%;
+        height: 240px;
+    }
+    .image-contact li{
+        color: #fff;
+    }
+}

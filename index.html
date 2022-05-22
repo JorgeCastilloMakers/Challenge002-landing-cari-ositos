@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cariñositos Ondemand</title>
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <link rel="shortcut icon" href="assets/Cariñositos-logo.svg" type="image/x-icon"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/379028bca9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="home">
+        <div class="fantasmin"></div>
+        <nav>
+            <img src="assets/logo-nombre-rosa.svg" alt="logo-cariñositos"/>
+            <label for="menu" class="nav-label">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu" class="nav-input">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#about" class="nav-item">Quienes Somos</a></li>
+                <li><a href="#personaliza" class="nav-item">Personaliza</a></li>
+                <li><a href="#contacto" class="nav-item">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="title">
+            <h1>
+                #TeddyLovers
+            </h1>
+            <h2>Personaliza tu osito, para vos o para regalar</h2>
+        </div>
+    </header>
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="image-about">
+                <img src="assets/pexels-julia-kuzenkov-1974656.jpg" alt="ositos-de-peluche"/>
+            </div>
+            <div class="text-about">
+                <h2>
+                    Quienes somos.
+                </h2>
+                <p>
+                    Somos una empresa familiar en donde te ofrecemos una experiencia unica, para chicos y grandes.
+                    Con más de 20 años de experiencia en el rubro, te ayudamos a crear el mejor teddy para vos o para regalar.
+
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="personaliza" class="personaliza"> 
+            <div class="formulario">
+                <h1>
+                    Personaliza tu Teddy
+                </h1>
+                <form action="">
+                    <div class="form-color">
+                        <label for="color">Color</label>
+                        <select name="color" id="color">
+                            <option value="marron">Marron</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="Ocre">Ocre</option>
+                            <option value="Rosa">Rosa</option>
+                            <option value="Celeste">Celeste</option>
+                        </select>
+                    </div>
+                    <div class="form-size">
+                        <p>Tamaño</p>
+                        <select name="size" id="size">
+                            <option value="s">Small</option>
+                            <option value="l">Large</option>
+                            <option value="xl">Extra Large</option>
+                        </select>
+                    </div>
+                    <div class="form-aroma">
+                        <label for="aroma">Aroma</label>
+                        <select name="aroma" id="aroma">
+                            <option value="sin-aroma">Sin aroma</option>
+                            <option value="lavanda">Lavanda</option>
+                            <option value="canela">Canela</option>
+                            <option value="lemon-grass">Lemon Grass</option>
+                            <option value="jazmin">jazmín</option>
+                        </select>
+                    </div>
+                    <div class="form-file">
+                        <p>Podes añadirle sonido</p>
+                        <label for="sonido"></label>
+                        <input type="file" name="sonido" id="sonido">
+                    </div>
+                    <div class="form-accesorios">
+                        <label for="accesorios">Accesorios</label>
+                        <select name="accesorios" id="accesorios">
+                            <option value="ninguno">Ninguno</option>
+                            <option value="teddy">Teddy bebe</option>
+                            <option value="corazon">Corazon</option>
+                            <option value="sombrero">Sombrero</option>
+                            <option value="camisa">Camisa</option>
+                            <option value="gafas">Gafas</option>
+                        </select>
+                    </div>
+                    <div class="form-btn">
+                        <button type="submit">Realizar pedido</button>
+                    </div>
+                </form>
+            </div>
+    </section>
+    <section id="contacto" class="contact">
+        <div class="contact-container">
+            <form action="" class="contact-form">
+                <h2>Contactanos</h2>
+                <div class="name">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name">    
+                </div>
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="mensaje">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="contact-btn">Enviar mensaje</button>
+            </form>
+            <div class="image-contact">
+                <div class="text-container">
+                    <h2>
+                        Nuestro Local
+                    </h2>
+                    <ul>
+                        <li>Dirección: Calle Falsa 123</li>
+                        <li>Horario: Lun a Sab 09hs a 18hs</li>
+                        <li>Email: info@cariñositos.com</li>
+                        <li>Whatsapp: +541155556666</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <img src="assets/logo-foot.png" alt="">
+            <p>
+                Copyright © 2022 - Desarrollado por Jorge Castillo
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
